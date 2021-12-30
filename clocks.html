@@ -35,8 +35,8 @@
     <script type="text/javascript" src="./node_modules/luxon/build/global/luxon.js"></script>
     <script>
         const DateTime = luxon.DateTime;
-        const defaultTimezones = ['Pacific/Honolulu', 'America/Los_Angeles', 'America/New_York', 'America/Sao_Paulo', 'Europe/Paris', 'Asia/Aqtobe', 'Asia/Kuala_Lumpur', 'Australia/Queensland'];
-        const defaultShorthand = ['HST', 'PST', 'EST', 'BRT', 'CEST', 'PKT', 'MYT', 'AEST'];
+        const defaultTimezones = ['Pacific/Honolulu', 'America/Los_Angeles', 'America/New_York', 'GMT', 'Europe/Paris', 'Asia/Aqtobe', 'Asia/Kuala_Lumpur', 'Australia/Queensland'];
+        const defaultShorthand = ['HST', 'PST', 'EST', 'GMT', 'CEST', 'PKT', 'MYT', 'AEST'];
         const urlParams = new URLSearchParams(window.location.search);
         const timeZoneParams = urlParams.get('tz');
         const shortHandParams = urlParams.get('sh') || '';
